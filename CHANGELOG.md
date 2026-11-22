@@ -3,6 +3,24 @@
 All notable changes to this project. The format follows Keep a Changelog; versions
 use semantic versioning.
 
+## [1.6.5] — 2026-11-22
+
+Packaging and metadata only — no detector, grammar or routing behaviour changed. The
+338 offline checks pass exactly as they did in 1.6.4.
+
+### Changed
+
+- `verify.py` now states the count it actually reports: 338, not the stale 91 carried
+  in the header since v1.5. README, docs and the suites were already correct.
+- CI actions moved to `actions/checkout@v7` and `actions/setup-python@v7`; the job
+  still covers Python 3.10, 3.11 and 3.12.
+- `ui_server.py` reports `1.6.5` from `/version`, the inspector header and `Server`.
+
+### Added
+
+- Issue forms for bug reports and detector gaps, a pull request template, and a
+  Dependabot config for GitHub Actions.
+
 ## [1.6.4] — 2026-11-22
 
 ### Added

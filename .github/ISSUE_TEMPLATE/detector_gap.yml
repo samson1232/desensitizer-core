@@ -48,7 +48,7 @@ body:
     id: version
     attributes:
       label: Version / commit
-      placeholder: "v1.6.4 or ec5e4d7"
+      placeholder: "v1.6.5 or the commit sha from the release page"
     validations:
       required: true
   - type: checkboxes

@@ -61,7 +61,7 @@ from lanes import LaneDispatcher, FrontierUnconfigured, lane_for_route  # noqa: 
 from pipeline import Pipeline      # noqa: E402
 from runlog import RunLog          # noqa: E402
 
-VERSION = "1.6.4"
+VERSION = "1.6.5"
 UI_DIR = os.path.join(HERE, "ui")
 MAX_PROMPT = 20000
 MAX_LIST = 50
