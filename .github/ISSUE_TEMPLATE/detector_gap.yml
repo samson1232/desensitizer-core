@@ -1,0 +1,62 @@
+name: Detector gap
+description: A value that should have been censored was not, or was corrupted.
+title: "[detector] "
+labels: ["detector"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not paste real PII or credentials.** Replace every character of the
+        value with a placeholder that preserves the *shape* only:
+        `FIRST LAST`, `user@example.com`, `4111 1111 1111 1111`, `EXAMPLE-1234`.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Expected kind
+      options:
+        - person / name
+        - address (US/UK/SG)
+        - email
+        - phone
+        - employee_id
+        - ssn / ssn_last4
+        - username
+        - hostname / fqdn
+        - ipv4 / ipv6
+        - mac / uuid
+        - api_secret / aws_key / url_credential
+        - ssh_fingerprint
+        - other (say below)
+    validations:
+      required: true
+  - type: textarea
+    id: shape
+    attributes:
+      label: Shape of the missed value
+      description: A synthetic example with the same structure, never the real value.
+      placeholder: "Blk 35 Example Road, #01-01, Singapore 000000"
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behaviour
+      description: What the censored output looked like, with values masked.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      placeholder: "v1.6.4 or ec5e4d7"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: This is a synthetic example, not real PII.
+          required: true
+        - label: I checked docs/detectors.md for a documented limit.
+          required: true

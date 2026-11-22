@@ -1,0 +1,40 @@
+name: Bug report
+description: A crash, a wrong classification, a silent run, or a UI defect.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Include the class from the run log if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Command, config (redacted), and the smallest synthetic input.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I did not paste real PII, credentials, or keys.
+          required: true
+        - label: This is not a security vulnerability (those go to SECURITY.md).
+          required: true
