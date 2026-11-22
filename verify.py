@@ -1,6 +1,6 @@
 """Single-command verification. Offline by default.
 
-    python3 verify.py            # 91 offline checks, no models
+    python3 verify.py            # 338 offline checks, no models
     python3 verify.py --live     # adds one real judge+generator run (~5 min)
     python3 verify.py --json     # machine-readable summary
 
