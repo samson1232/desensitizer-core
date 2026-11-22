@@ -1,0 +1,342 @@
+{
+ "staff": [
+  {
+   "id": "STF-1041",
+   "name": "Marion Ellsworth-Tait",
+   "role": "Shift Supervisor",
+   "dept": "operations",
+   "email": "m.ellsworth-tait@gwenfawr-npp.example",
+   "phone": "+44 7700 900317",
+   "ni": "JG 41 22 87 C",
+   "addr": "14 Brynhyfryd Terrace, Llanwern",
+   "dob": "1978-04-12",
+   "salary": "61840.00",
+   "utr": "1234567890"
+  },
+  {
+   "id": "STF-1042",
+   "name": "Devendra Kalyanasundaram",
+   "role": "Reactor Systems Engineer",
+   "dept": "engineering",
+   "email": "d.kalyanasundaram@gwenfawr-npp.example",
+   "phone": "+44 7700 900482",
+   "ni": "PB 77 03 19 D",
+   "addr": "Flat 3, Trawscoed House, Caerleon",
+   "dob": "1985-11-30",
+   "salary": "74520.00",
+   "utr": "2234567890"
+  },
+  {
+   "id": "STF-1043",
+   "name": "Rosalind \u00d3 Math\u00fana",
+   "role": "Radiation Protection Advisor",
+   "dept": "safety",
+   "email": "r.omathuna@gwenfawr-npp.example",
+   "phone": "+44 7700 900553",
+   "ni": "QQ 12 34 56 C",
+   "addr": "7 Cwrt Yr Ynys, Usk",
+   "dob": "1980-02-08",
+   "salary": "69210.00",
+   "utr": "3234567890"
+  },
+  {
+   "id": "STF-1044",
+   "name": "Tobias Fenwick-Hale",
+   "role": "Cybersecurity Lead",
+   "dept": "it",
+   "email": "t.fenwick-hale@gwenfawr-npp.example",
+   "phone": "+44 7700 900614",
+   "ni": "AB 55 91 40 B",
+   "addr": "22 Fairoak Road, Cyncoed",
+   "dob": "1983-07-22",
+   "salary": "81400.00",
+   "utr": "4234567890"
+  },
+  {
+   "id": "STF-1045",
+   "name": "Priya Raghunathan",
+   "role": "Control Room Operator",
+   "dept": "operations",
+   "email": "p.raghunathan@gwenfawr-npp.example",
+   "phone": "+44 7700 900755",
+   "ni": "CE 60 12 77 A",
+   "addr": "9 Heol y Frenhines, Llanelli",
+   "dob": "1991-09-14",
+   "salary": "58220.00",
+   "utr": "5234567890"
+  },
+  {
+   "id": "STF-1046",
+   "name": "Callum Abernethy-Bryce",
+   "role": "Mechanical Maintenance Lead",
+   "dept": "engineering",
+   "email": "c.abernethy-bryce@gwenfawr-npp.example",
+   "phone": "+44 7700 900816",
+   "ni": "JK 28 44 05 D",
+   "addr": "31 Rhodfa'r Glyn, Penarth",
+   "dob": "1974-12-03",
+   "salary": "65780.00",
+   "utr": "6234567890"
+  },
+  {
+   "id": "STF-1047",
+   "name": "Nadia Belkacem",
+   "role": "Emergency Planning Officer",
+   "dept": "safety",
+   "email": "n.belkacem@gwenfawr-npp.example",
+   "phone": "+44 7700 900927",
+   "ni": "LM 09 63 21 B",
+   "addr": "48 Queen's Hill Crescent, Newport",
+   "dob": "1988-06-19",
+   "salary": "63150.00",
+   "utr": "7234567890"
+  },
+  {
+   "id": "STF-1048",
+   "name": "Ewan Strathairn",
+   "role": "Network Operations Engineer",
+   "dept": "it",
+   "email": "e.strathairn@gwenfawr-npp.example",
+   "phone": "+44 7700 901038",
+   "ni": "NO 34 87 60 A",
+   "addr": "5 Maes y Coed, Rhiwbina",
+   "dob": "1993-01-27",
+   "salary": "59900.00",
+   "utr": "8234567890"
+  },
+  {
+   "id": "STF-1049",
+   "name": "Hyacinth Okonkwo-Barrett",
+   "role": "Chemistry Technician",
+   "dept": "engineering",
+   "email": "h.okonkwo-barrett@gwenfawr-npp.example",
+   "phone": "+44 7700 901149",
+   "ni": "RT 72 15 38 C",
+   "addr": "18 Clos Parc Morgannwg, Cardiff",
+   "dob": "1990-03-05",
+   "salary": "54120.00",
+   "utr": "9234567890"
+  },
+  {
+   "id": "STF-1050",
+   "name": "Sergei Vainikka-Petrov",
+   "role": "Dosimetry Analyst",
+   "dept": "safety",
+   "email": "s.vainikka-petrov@gwenfawr-npp.example",
+   "phone": "+44 7700 901260",
+   "ni": "VW 46 20 94 D",
+   "addr": "2 Gelli Aur, Llandaff North",
+   "dob": "1979-10-11",
+   "salary": "61330.00",
+   "utr": "1334567890"
+  },
+  {
+   "id": "STF-1051",
+   "name": "Ama Boateng-Acheampong",
+   "role": "Plant IT Support Officer",
+   "dept": "it",
+   "email": "a.boateng-acheampong@gwenfawr-npp.example",
+   "phone": "+44 7700 901371",
+   "ni": "XY 81 06 53 B",
+   "addr": "27 Llys yr Eos, Trowbridge",
+   "dob": "1995-05-16",
+   "salary": "47890.00",
+   "utr": "1434567890"
+  },
+  {
+   "id": "STF-1052",
+   "name": "Ffion Llewellyn-Pryce",
+   "role": "Outage Scheduler",
+   "dept": "operations",
+   "email": "f.llewellyn-pryce@gwenfawr-npp.example",
+   "phone": "+44 7700 901482",
+   "ni": "ZA 13 58 76 A",
+   "addr": "6 Heol Croeso, Llanishen",
+   "dob": "1982-08-25",
+   "salary": "63740.00",
+   "utr": "1534567890"
+  }
+ ],
+ "it_systems": [
+  {
+   "host": "operations-ws-100",
+   "fqdn": "operations-ws-100.npp.gwenfawr.example",
+   "ip": "10.20.10.40",
+   "owner_id": "STF-1041",
+   "owner": "Marion Ellsworth-Tait",
+   "account": "m.ellsworth-tait@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0a:14:1e",
+   "os": "Windows Server 2019",
+   "role": "jump host"
+  },
+  {
+   "host": "engineering-ws-101",
+   "fqdn": "engineering-ws-101.npp.gwenfawr.example",
+   "ip": "10.20.11.41",
+   "owner_id": "STF-1042",
+   "owner": "Devendra Kalyanasundaram",
+   "account": "d.kalyanasundaram@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0b:15:1f",
+   "os": "RHEL 8.6",
+   "role": "workstation"
+  },
+  {
+   "host": "safety-ws-102",
+   "fqdn": "safety-ws-102.npp.gwenfawr.example",
+   "ip": "10.20.12.42",
+   "owner_id": "STF-1043",
+   "owner": "Rosalind \u00d3 Math\u00fana",
+   "account": "r.omathuna@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0c:16:20",
+   "os": "RHEL 8.6",
+   "role": "jump host"
+  },
+  {
+   "host": "it-ws-103",
+   "fqdn": "it-ws-103.npp.gwenfawr.example",
+   "ip": "10.20.13.43",
+   "owner_id": "STF-1044",
+   "owner": "Tobias Fenwick-Hale",
+   "account": "t.fenwick-hale@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0d:17:21",
+   "os": "Windows Server 2019",
+   "role": "workstation"
+  },
+  {
+   "host": "operations-ws-104",
+   "fqdn": "operations-ws-104.npp.gwenfawr.example",
+   "ip": "10.20.14.44",
+   "owner_id": "STF-1045",
+   "owner": "Priya Raghunathan",
+   "account": "p.raghunathan@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0e:18:22",
+   "os": "RHEL 8.6",
+   "role": "jump host"
+  },
+  {
+   "host": "engineering-ws-105",
+   "fqdn": "engineering-ws-105.npp.gwenfawr.example",
+   "ip": "10.20.15.45",
+   "owner_id": "STF-1046",
+   "owner": "Callum Abernethy-Bryce",
+   "account": "c.abernethy-bryce@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0f:19:23",
+   "os": "RHEL 8.6",
+   "role": "workstation"
+  },
+  {
+   "host": "safety-ws-106",
+   "fqdn": "safety-ws-106.npp.gwenfawr.example",
+   "ip": "10.20.16.46",
+   "owner_id": "STF-1047",
+   "owner": "Nadia Belkacem",
+   "account": "n.belkacem@gwenfawr-npp.example",
+   "mac": "02:1a:2b:10:1a:24",
+   "os": "Windows Server 2019",
+   "role": "jump host"
+  },
+  {
+   "host": "it-ws-107",
+   "fqdn": "it-ws-107.npp.gwenfawr.example",
+   "ip": "10.20.17.47",
+   "owner_id": "STF-1048",
+   "owner": "Ewan Strathairn",
+   "account": "e.strathairn@gwenfawr-npp.example",
+   "mac": "02:1a:2b:11:1b:25",
+   "os": "RHEL 8.6",
+   "role": "workstation"
+  },
+  {
+   "host": "engineering-ws-108",
+   "fqdn": "engineering-ws-108.npp.gwenfawr.example",
+   "ip": "10.20.18.48",
+   "owner_id": "STF-1049",
+   "owner": "Hyacinth Okonkwo-Barrett",
+   "account": "h.okonkwo-barrett@gwenfawr-npp.example",
+   "mac": "02:1a:2b:12:1c:26",
+   "os": "RHEL 8.6",
+   "role": "jump host"
+  },
+  {
+   "host": "safety-ws-109",
+   "fqdn": "safety-ws-109.npp.gwenfawr.example",
+   "ip": "10.20.19.49",
+   "owner_id": "STF-1050",
+   "owner": "Sergei Vainikka-Petrov",
+   "account": "s.vainikka-petrov@gwenfawr-npp.example",
+   "mac": "02:1a:2b:13:1d:27",
+   "os": "Windows Server 2019",
+   "role": "workstation"
+  },
+  {
+   "host": "it-ws-110",
+   "fqdn": "it-ws-110.npp.gwenfawr.example",
+   "ip": "10.20.20.50",
+   "owner_id": "STF-1051",
+   "owner": "Ama Boateng-Acheampong",
+   "account": "a.boateng-acheampong@gwenfawr-npp.example",
+   "mac": "02:1a:2b:14:1e:28",
+   "os": "RHEL 8.6",
+   "role": "jump host"
+  },
+  {
+   "host": "operations-ws-111",
+   "fqdn": "operations-ws-111.npp.gwenfawr.example",
+   "ip": "10.20.21.51",
+   "owner_id": "STF-1052",
+   "owner": "Ffion Llewellyn-Pryce",
+   "account": "f.llewellyn-pryce@gwenfawr-npp.example",
+   "mac": "02:1a:2b:15:1f:29",
+   "os": "RHEL 8.6",
+   "role": "workstation"
+  }
+ ],
+ "infra": [
+  {
+   "host": "npp-dc01",
+   "fqdn": "dc01.npp.gwenfawr.example",
+   "ip": "10.20.1.10",
+   "role": "domain controller",
+   "mac": "02:ff:01:00:00:10",
+   "note": "Replicates to 10.20.1.11. Holds all staff accounts."
+  },
+  {
+   "host": "npp-dc02",
+   "fqdn": "dc02.npp.gwenfawr.example",
+   "ip": "10.20.1.11",
+   "role": "secondary domain controller",
+   "mac": "02:ff:01:00:00:11",
+   "note": "Failover for dc01."
+  },
+  {
+   "host": "npp-scada-gw",
+   "fqdn": "scada-gw.npp.gwenfawr.example",
+   "ip": "10.20.1.30",
+   "role": "SCADA gateway",
+   "mac": "02:ff:01:00:00:30",
+   "note": "Bridges plant network to corporate. Credentials in vault."
+  },
+  {
+   "host": "npp-archive01",
+   "fqdn": "archive01.npp.gwenfawr.example",
+   "ip": "10.20.1.40",
+   "role": "events archive",
+   "mac": "02:ff:01:00:00:40",
+   "note": "Stores 7 years of shift logs including staff names."
+  }
+ ],
+ "docs": [
+  "engineering/maintenance-backlog-nov.md",
+  "engineering/reactor-coolant-loop-a.md",
+  "it/domain-controller-audit.md",
+  "it/it-support-queue-export.md",
+  "it/network-segmentation-config.md",
+  "it/vpn-and-remote-access.md",
+  "operations/control-room-rota-q4.md",
+  "operations/shift-handover-2026-11-19.md",
+  "records/access-badge-log.md",
+  "records/staff-training-matrix.md",
+  "safety/emergency-plan-annex-b.md",
+  "safety/radiation-survey-summary.md"
+ ]
+}

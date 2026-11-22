@@ -1,0 +1,170 @@
+{
+ "workstations": [
+  {
+   "host": "operations-ws-100",
+   "fqdn": "operations-ws-100.npp.gwenfawr.example",
+   "ip": "10.20.10.40",
+   "owner_id": "STF-1041",
+   "owner": "Marion Ellsworth-Tait",
+   "account": "m.ellsworth-tait@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0a:14:1e",
+   "os": "Windows Server 2019",
+   "role": "jump host"
+  },
+  {
+   "host": "engineering-ws-101",
+   "fqdn": "engineering-ws-101.npp.gwenfawr.example",
+   "ip": "10.20.11.41",
+   "owner_id": "STF-1042",
+   "owner": "Devendra Kalyanasundaram",
+   "account": "d.kalyanasundaram@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0b:15:1f",
+   "os": "RHEL 8.6",
+   "role": "workstation"
+  },
+  {
+   "host": "safety-ws-102",
+   "fqdn": "safety-ws-102.npp.gwenfawr.example",
+   "ip": "10.20.12.42",
+   "owner_id": "STF-1043",
+   "owner": "Rosalind \u00d3 Math\u00fana",
+   "account": "r.omathuna@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0c:16:20",
+   "os": "RHEL 8.6",
+   "role": "jump host"
+  },
+  {
+   "host": "it-ws-103",
+   "fqdn": "it-ws-103.npp.gwenfawr.example",
+   "ip": "10.20.13.43",
+   "owner_id": "STF-1044",
+   "owner": "Tobias Fenwick-Hale",
+   "account": "t.fenwick-hale@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0d:17:21",
+   "os": "Windows Server 2019",
+   "role": "workstation"
+  },
+  {
+   "host": "operations-ws-104",
+   "fqdn": "operations-ws-104.npp.gwenfawr.example",
+   "ip": "10.20.14.44",
+   "owner_id": "STF-1045",
+   "owner": "Priya Raghunathan",
+   "account": "p.raghunathan@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0e:18:22",
+   "os": "RHEL 8.6",
+   "role": "jump host"
+  },
+  {
+   "host": "engineering-ws-105",
+   "fqdn": "engineering-ws-105.npp.gwenfawr.example",
+   "ip": "10.20.15.45",
+   "owner_id": "STF-1046",
+   "owner": "Callum Abernethy-Bryce",
+   "account": "c.abernethy-bryce@gwenfawr-npp.example",
+   "mac": "02:1a:2b:0f:19:23",
+   "os": "RHEL 8.6",
+   "role": "workstation"
+  },
+  {
+   "host": "safety-ws-106",
+   "fqdn": "safety-ws-106.npp.gwenfawr.example",
+   "ip": "10.20.16.46",
+   "owner_id": "STF-1047",
+   "owner": "Nadia Belkacem",
+   "account": "n.belkacem@gwenfawr-npp.example",
+   "mac": "02:1a:2b:10:1a:24",
+   "os": "Windows Server 2019",
+   "role": "jump host"
+  },
+  {
+   "host": "it-ws-107",
+   "fqdn": "it-ws-107.npp.gwenfawr.example",
+   "ip": "10.20.17.47",
+   "owner_id": "STF-1048",
+   "owner": "Ewan Strathairn",
+   "account": "e.strathairn@gwenfawr-npp.example",
+   "mac": "02:1a:2b:11:1b:25",
+   "os": "RHEL 8.6",
+   "role": "workstation"
+  },
+  {
+   "host": "engineering-ws-108",
+   "fqdn": "engineering-ws-108.npp.gwenfawr.example",
+   "ip": "10.20.18.48",
+   "owner_id": "STF-1049",
+   "owner": "Hyacinth Okonkwo-Barrett",
+   "account": "h.okonkwo-barrett@gwenfawr-npp.example",
+   "mac": "02:1a:2b:12:1c:26",
+   "os": "RHEL 8.6",
+   "role": "jump host"
+  },
+  {
+   "host": "safety-ws-109",
+   "fqdn": "safety-ws-109.npp.gwenfawr.example",
+   "ip": "10.20.19.49",
+   "owner_id": "STF-1050",
+   "owner": "Sergei Vainikka-Petrov",
+   "account": "s.vainikka-petrov@gwenfawr-npp.example",
+   "mac": "02:1a:2b:13:1d:27",
+   "os": "Windows Server 2019",
+   "role": "workstation"
+  },
+  {
+   "host": "it-ws-110",
+   "fqdn": "it-ws-110.npp.gwenfawr.example",
+   "ip": "10.20.20.50",
+   "owner_id": "STF-1051",
+   "owner": "Ama Boateng-Acheampong",
+   "account": "a.boateng-acheampong@gwenfawr-npp.example",
+   "mac": "02:1a:2b:14:1e:28",
+   "os": "RHEL 8.6",
+   "role": "jump host"
+  },
+  {
+   "host": "operations-ws-111",
+   "fqdn": "operations-ws-111.npp.gwenfawr.example",
+   "ip": "10.20.21.51",
+   "owner_id": "STF-1052",
+   "owner": "Ffion Llewellyn-Pryce",
+   "account": "f.llewellyn-pryce@gwenfawr-npp.example",
+   "mac": "02:1a:2b:15:1f:29",
+   "os": "RHEL 8.6",
+   "role": "workstation"
+  }
+ ],
+ "infrastructure": [
+  {
+   "host": "npp-dc01",
+   "fqdn": "dc01.npp.gwenfawr.example",
+   "ip": "10.20.1.10",
+   "role": "domain controller",
+   "mac": "02:ff:01:00:00:10",
+   "note": "Replicates to 10.20.1.11. Holds all staff accounts."
+  },
+  {
+   "host": "npp-dc02",
+   "fqdn": "dc02.npp.gwenfawr.example",
+   "ip": "10.20.1.11",
+   "role": "secondary domain controller",
+   "mac": "02:ff:01:00:00:11",
+   "note": "Failover for dc01."
+  },
+  {
+   "host": "npp-scada-gw",
+   "fqdn": "scada-gw.npp.gwenfawr.example",
+   "ip": "10.20.1.30",
+   "role": "SCADA gateway",
+   "mac": "02:ff:01:00:00:30",
+   "note": "Bridges plant network to corporate. Credentials in vault."
+  },
+  {
+   "host": "npp-archive01",
+   "fqdn": "archive01.npp.gwenfawr.example",
+   "ip": "10.20.1.40",
+   "role": "events archive",
+   "mac": "02:ff:01:00:00:40",
+   "note": "Stores 7 years of shift logs including staff names."
+  }
+ ]
+}

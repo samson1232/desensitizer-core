@@ -1,0 +1,39 @@
+{
+  "_comment": "Exactly one judge and one generator. Swap a model by changing one value.",
+  "threshold": 5.2,
+  "judge": {
+    "backend": "openjev",
+    "url": "http://127.0.0.1:8791",
+    "timeout": 300
+  },
+  "generator": {
+    "backend": "hermes-profile",
+    "profile": "testingagentsa14b"
+  },
+  "_alternatives": {
+    "generator_openai_api": {
+      "backend": "openai-api",
+      "url": "http://127.0.0.1:8083",
+      "model": "agents-a1-4b",
+      "max_tokens": 2200
+    },
+    "_note": "openai-api works only with a model that emits content within its budget; the current 4B runs --reasoning-budget -1 and returns none for coding prompts."
+  },
+  "_swapping": [
+    "1. change backend (and url/model/profile)",
+    "2. python3 live_integration.py --config config.json",
+    "3. the router and pipeline are untouched: judge.level is normalised onto 1..10"
+  ],
+  "lanes": {
+    "local": {
+      "backend": "hermes-subagent",
+      "profile": "desens-local"
+    },
+    "frontier": {
+      "backend": "hermes-subagent",
+      "profile": "desens-frontier"
+    }
+  },
+  "_lane_note": "Two delegated subagents, one per lane. The route picks the lane; a missing frontier lane reports FRONTIER_UNCONFIGURED and never falls back to local.",
+  "_threshold_note": "Manual override above the calibrated 4.221 in calibration.json, to exercise the local lane. At 5.2 no calibrated corpus task routes frontier. Delete this file to fall back to the measured threshold."
+}

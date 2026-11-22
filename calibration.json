@@ -1,0 +1,174 @@
+{
+  "measured": "2026-11-22T01:35:05",
+  "runs_per_task": 3,
+  "tasks": [
+    {
+      "name": "easy-01",
+      "group": "easy",
+      "runs": [
+        3.78,
+        3.78,
+        3.78
+      ],
+      "n": 3,
+      "mean": 3.78,
+      "sd": 0.0
+    },
+    {
+      "name": "easy-02",
+      "group": "easy",
+      "runs": [
+        3.802,
+        3.802,
+        3.802
+      ],
+      "n": 3,
+      "mean": 3.802,
+      "sd": 0.0
+    },
+    {
+      "name": "easy-03",
+      "group": "easy",
+      "runs": [
+        3.53,
+        3.53,
+        3.53
+      ],
+      "n": 3,
+      "mean": 3.53,
+      "sd": 0.0
+    },
+    {
+      "name": "easy-04",
+      "group": "easy",
+      "runs": [
+        3.638,
+        3.638,
+        3.638
+      ],
+      "n": 3,
+      "mean": 3.638,
+      "sd": 0.0
+    },
+    {
+      "name": "med-01",
+      "group": "medium",
+      "runs": [
+        3.927,
+        3.927,
+        3.927
+      ],
+      "n": 3,
+      "mean": 3.927,
+      "sd": 0.0
+    },
+    {
+      "name": "med-02",
+      "group": "medium",
+      "runs": [
+        4.559,
+        4.559,
+        4.559
+      ],
+      "n": 3,
+      "mean": 4.559,
+      "sd": 0.0
+    },
+    {
+      "name": "med-03",
+      "group": "medium",
+      "runs": [
+        4.546,
+        4.546,
+        4.546
+      ],
+      "n": 3,
+      "mean": 4.546,
+      "sd": 0.0
+    },
+    {
+      "name": "med-04",
+      "group": "medium",
+      "runs": [
+        4.702,
+        4.702,
+        4.702
+      ],
+      "n": 3,
+      "mean": 4.702,
+      "sd": 0.0
+    },
+    {
+      "name": "hard-01",
+      "group": "hard",
+      "runs": [
+        4.35,
+        4.35,
+        4.35
+      ],
+      "n": 3,
+      "mean": 4.35,
+      "sd": 0.0
+    },
+    {
+      "name": "hard-02",
+      "group": "hard",
+      "runs": [
+        4.58,
+        4.58,
+        4.58
+      ],
+      "n": 3,
+      "mean": 4.58,
+      "sd": 0.0
+    },
+    {
+      "name": "hard-03",
+      "group": "hard",
+      "runs": [
+        5.036,
+        5.036,
+        5.036
+      ],
+      "n": 3,
+      "mean": 5.036,
+      "sd": 0.0
+    },
+    {
+      "name": "hard-04",
+      "group": "hard",
+      "runs": [
+        5.054,
+        5.054,
+        5.054
+      ],
+      "n": 3,
+      "mean": 5.054,
+      "sd": 0.0
+    }
+  ],
+  "groups": {
+    "easy": {
+      "n": 4,
+      "mean": 3.688,
+      "sd": 0.128
+    },
+    "hard": {
+      "n": 4,
+      "mean": 4.755,
+      "sd": 0.348
+    }
+  },
+  "separation": 1.067,
+  "noise_sd": 0.0,
+  "separation_over_noise": null,
+  "min_ratio": 3.0,
+  "min_separation": 1.0,
+  "calibrated": true,
+  "threshold": 4.221,
+  "verdict": "CALIBRATED",
+  "reason": "within-task SD 0 (deterministic for identical input); separation 1.067 >= practical floor 1.0",
+  "elapsed_s": 1317.0,
+  "judge": "openjev",
+  "mode": "censored, planted PII"
+}

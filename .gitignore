@@ -1,0 +1,19 @@
+# runtime and local state
+__pycache__/
+*.py[cod]
+runs/
+config.json
+live_integration.json
+desens_key.bin
+.env
+
+# release artifacts
+*.tar.gz
+*.tar.gz.sha256
+
+# environments and editors
+.venv/
+venv/
+.DS_Store
+.idea/
+.vscode/

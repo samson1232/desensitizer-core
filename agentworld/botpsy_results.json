@@ -1,0 +1,171 @@
+{
+ "c1": [
+  {
+   "ok": false,
+   "recall": 0.667,
+   "precision": 1.0,
+   "missed": [
+    "Ama Boateng-Acheampong",
+    "Callum Abernethy-Bryce",
+    "Ffion Llewellyn-Pryce",
+    "Priya Raghunathan"
+   ],
+   "spurious": [],
+   "tokens": 2226,
+   "doc": "operations/shift-handover-2026-11-19.md"
+  },
+  {
+   "ok": false,
+   "recall": 0.188,
+   "precision": 0.75,
+   "missed": [
+    "Ama Boateng-Acheampong",
+    "Ffion Llewellyn-Pryce",
+    "Marion Ellsworth-Tait",
+    "STF-1041"
+   ],
+   "spurious": [
+    "ama boateng-acheampong@gwenfawr-npp.example"
+   ],
+   "tokens": 1760,
+   "doc": "it/vpn-and-remote-access.md"
+  },
+  {
+   "ok": false,
+   "recall": 0.231,
+   "precision": 1.0,
+   "missed": [
+    "Devendra Kalyanasundaram",
+    "Nadia Belkacem",
+    "Rosalind \u00d3 Math\u00fana",
+    "STF-1042"
+   ],
+   "spurious": [],
+   "tokens": 1789,
+   "doc": "records/staff-training-matrix.md"
+  },
+  {
+   "ok": true,
+   "recall": 0.889,
+   "precision": 1.0,
+   "missed": [
+    "Sergei Vainikka-Petrov"
+   ],
+   "spurious": [],
+   "tokens": 1904,
+   "doc": "safety/radiation-survey-summary.md"
+  }
+ ],
+ "c2": [
+  {
+   "ok": true,
+   "fields_ok": "2/2",
+   "got": {
+    "name": "Ewan Strathairn",
+    "staff_id": "STF-1048"
+   },
+   "want": {
+    "name": "Ewan Strathairn",
+    "staff_id": "STF-1048"
+   },
+   "tokens": 1055,
+   "doc": "it/vpn-and-remote-access.md"
+  }
+ ],
+ "c3": [
+  {
+   "ok": false,
+   "truth": 15,
+   "leaked": [
+    "Marion Ellsworth-Tait",
+    "+44 7700 900755",
+    "STF-1052",
+    "+44 7700 901482",
+    "+44 7700 901371"
+   ],
+   "n_leaked": 15,
+   "kept_shape": true,
+   "tokens": 1955,
+   "doc": "operations/shift-handover-2026-11-19.md"
+  },
+  {
+   "ok": false,
+   "truth": 16,
+   "leaked": [
+    "XY 81 06 53 B",
+    "STF-1051",
+    "Marion Ellsworth-Tait",
+    "STF-1052",
+    "Ewan Strathairn"
+   ],
+   "n_leaked": 16,
+   "kept_shape": false,
+   "tokens": 1647,
+   "doc": "it/vpn-and-remote-access.md"
+  },
+  {
+   "ok": false,
+   "truth": 13,
+   "leaked": [
+    "Marion Ellsworth-Tait",
+    "Nadia Belkacem",
+    "STF-1047",
+    "Rosalind \u00d3 Math\u00fana",
+    "Tobias Fenwick-Hale"
+   ],
+   "n_leaked": 13,
+   "kept_shape": false,
+   "tokens": 1641,
+   "doc": "records/staff-training-matrix.md"
+  },
+  {
+   "ok": false,
+   "truth": 9,
+   "leaked": [
+    "r.omathuna@gwenfawr-npp.example",
+    "Nadia Belkacem",
+    "Rosalind \u00d3 Math\u00fana",
+    "+44 7700 900553",
+    "Sergei Vainikka-Petrov"
+   ],
+   "n_leaked": 9,
+   "kept_shape": false,
+   "tokens": 1549,
+   "doc": "safety/radiation-survey-summary.md"
+  }
+ ],
+ "c4": [
+  {
+   "ok": true,
+   "leaked": [],
+   "words": 25,
+   "summary": "The document summarizes Unit 2 Night Shift 2026-11-19 operations where power remained at 96% with Boron dilution completed at 03:14 and supervisor sign-off referencing staff_id:YQ5",
+   "tokens": 3280,
+   "doc": "operations/shift-handover-2026-11-19.md"
+  },
+  {
+   "ok": true,
+   "leaked": [],
+   "words": 15,
+   "summary": "This document records VPN configuration details, gateway endpoints, authorized remote users, and credentials for access.",
+   "tokens": 1830,
+   "doc": "it/vpn-and-remote-access.md"
+  },
+  {
+   "ok": true,
+   "leaked": [],
+   "words": 19,
+   "summary": "The document summarizes a Staff Training Matrix showing roles and an outstanding dosimetry issue requiring contact for training records.",
+   "tokens": 2179,
+   "doc": "records/staff-training-matrix.md"
+  },
+  {
+   "ok": true,
+   "leaked": [],
+   "words": 15,
+   "summary": "The document summarizes the radiation survey results and actions regarding controlled areas within the facility.",
+   "tokens": 3037,
+   "doc": "safety/radiation-survey-summary.md"
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desensitizer — prompt flow inspector</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="mark" aria-hidden="true">◈</span>
+    <div>
+      <h1>Desensitizer</h1>
+      <p>prompt flow inspector <span class="ver" id="version"></span></p>
+    </div>
+  </div>
+  <div class="top-right">
+    <span class="pill" id="conn"><i class="dot"></i> connecting</span>
+    <span class="pill local" title="The server binds loopback and refuses non-local origins">127.0.0.1 · local only</span>
+    <span class="pill" id="threshold" title="Routing threshold, or none when calibration does not justify one">route threshold —</span>
+  </div>
+</header>
+
+<main>
+  <section class="panel composer">
+    <div class="panel-head"><h2>Compose</h2><span class="muted" id="charcount">0 chars</span></div>
+    <label class="sr-only" for="prompt">Prompt</label>
+    <textarea id="prompt" spellcheck="false" placeholder="Paste the prompt you would send to a model. Include the identifiers you want to see handled — names, emails, cards, hosts."></textarea>
+    <div class="samples" id="samples">
+      <button class="chip" data-sample="plant">PII sample</button>
+      <button class="chip" data-sample="clean">Clean sample</button>
+      <button class="chip" data-sample="code">Coding task</button>
+      <button class="chip" data-sample="restore">Restore + verify</button>
+    </div>
+
+    <div class="field">
+      <label for="roster">Known names <span class="tag">roster</span></label>
+      <input id="roster" value="Alice Smith" autocomplete="off">
+      <p class="hint">Names are matched exactly (case-insensitive, across line breaks).</p>
+    </div>
+    <div class="field">
+      <label for="addresses">Declared addresses <span class="tag">literal</span></label>
+      <textarea id="addresses" rows="2" spellcheck="false">14 Mill Lane, Cardiff</textarea>
+      <p class="hint">One per line. Commas belong to the address, so they are not separators here.</p>
+    </div>
+
+    <fieldset class="modes">
+      <legend>Mode</legend>
+      <label class="mode">
+        <input type="radio" name="mode" value="dry" checked>
+        <span><b>Dry</b><small>censor only · instant</small></span>
+      </label>
+      <label class="mode">
+        <input type="radio" name="mode" value="judge">
+        <span><b>Judge</b><small>+ score &amp; route · ~25 s</small></span>
+      </label>
+      <label class="mode">
+        <input type="radio" name="mode" value="live">
+        <span><b>Live</b><small>full artifact path · minutes</small></span>
+      </label>
+    </fieldset>
+
+    <button id="run" class="primary">Run inspection</button>
+    <p class="hint safety-line">Dry mode makes no network call. Judge and Live send only the censored text to the configured local backends.</p>
+  </section>
+
+  <section class="panel flow">
+    <div class="panel-head">
+      <h2>Transform flow</h2>
+      <span class="muted" id="runmeta">no run yet</span>
+    </div>
+    <div id="flowEmpty" class="flow-empty">
+      <b>No inspection has run.</b> Start one to watch the prompt move through the pipeline:
+      <ol>
+        <li>censor finds identifiers and substitutes placeholders;</li>
+        <li>judge scores difficulty, route applies the calibrated threshold;</li>
+        <li>live mode generates, restores and compiles the artifact.</li>
+      </ol>
+    </div>
+    <div id="stages" class="stages"></div>
+  </section>
+
+  <aside class="panel entities">
+    <div class="panel-head">
+      <h2>Detected PII</h2>
+      <span class="muted" id="entcount">—</span>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="revealAll" disabled>
+      <span>Reveal values <b>local only</b></span>
+    </label>
+    <div id="entities" class="ents">
+      <p class="empty">Run an inspection to see every placeholder the censor minted, its kind, and where it came from.</p>
+    </div>
+
+    <div class="safety">
+      <h3>Data handling</h3>
+      <dl>
+        <dt>Leaves</dt><dd>censored tasking only, and only in judge/live mode.</dd>
+        <dt>Never leaves</dt><dd>the key, the pivot table, cleartext, the raw prompt.</dd>
+        <dt>On disk</dt><dd>a redacted run log — counts and timings, no values. Temp artifacts deleted.</dd>
+        <dt>Reveal</dt><dd>explicit request for one token of one run; answered in memory, never persisted.</dd>
+      </dl>
+    </div>
+  </aside>
+</main>
+
+<details class="panel raw">
+  <summary>Raw event stream <span class="muted">(previews of cleartext are omitted from this view)</span></summary>
+  <pre id="raw"></pre>
+</details>
+
+<footer>
+  <span>censoring is unconditional · there is no bypass</span>
+  <span id="footmeta"></span>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
